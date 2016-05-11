@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+	  	body {
+		    background-image: url("image/background.jpg");    
+		}
+		img {
+		    max-width: 100%;
+		    height: auto;
+
+		}
+		ul#menu {
+		    padding: 0;
+		    content: 100;
+
+		}
+		#footer {
+
+		    color:white;
+		    clear:both;
+		    text-align:center;
+		    padding:30px;	 	 
+		}
+
+		.slider_container div {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		}
+
+		.slider_container div {
+		    -webkit-animation: round 25s linear infinite;
+		            animation: round 25s linear infinite;
+		}
+
+		@-webkit-keyframes round {
+		    4% {
+		        opacity: 1;
+		        filter: alpha(opacity=100);
+		        /* 0 - 1秒 淡入*/
+		    }
+		    20% {
+		        opacity: 1;
+		        filter: alpha(opacity=100);
+		        /* 1- 5秒靜止*/
+		    }
+		    24% {
+		        opacity: 0;
+		        filter: alpha(opacity=0);
+		        /* 5-6秒淡出*/
+		    }
+		}
+		@keyframes round {
+		    4% {
+		        opacity: 1;
+		        filter: alpha(opacity=100);
+		        /* 0 - 1秒 淡入*/
+		    }
+		    20% {
+		        opacity: 1;
+		        filter: alpha(opacity=100);
+		        /* 1- 5秒靜止*/
+		    }
+		    24% {
+		        opacity: 0;
+		        filter: alpha(opacity=0);
+		        /* 5-6秒淡出*/
+		    }
+		}
+
+		.slider_container div:nth-child(5) {
+		    -webkit-animation-delay: 0s;
+		            animation-delay: 0s;
+		}
+
+		.slider_container div:nth-child(4) {
+		    -webkit-animation-delay: 5s;
+		            animation-delay: 5s;
+		}
+
+		.slider_container div:nth-child(3) {
+		    -webkit-animation-delay: 10s;
+		            animation-delay: 10s;
+		}
+
+		.slider_container div:nth-child(2) {
+		    -webkit-animation-delay: 15s;
+		            animation-delay: 15s;
+		}
+
+		.slider_container div:nth-child(1) {
+		    -webkit-animation-delay: 20s;
+		            animation-delay: 20s;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="container"> 
+  
+  <div class="row">
+    <div class="col-sm-7">
+      <img src="TITLE.png"  width="800" height="300"><br>
+
+  	    <ul id="menu">	
+  	    	<table style="width:100%">
+					
+	  	    	<!-- Add "border:0;" to prevent IE9 (and earlier) from displaying a border around the image. -->
+				<tr><a href="introduce.html">
+				  <img src="image/icon/ICON1.png" width="230px" height="80px" onMouseOver="this.width=this.width*1.1;this.height=this.height*1.0" onMouseOut="this.width=this.width/1.1;this.height=this.height/1.0" >  <br>
+				</a></tr>
+				<div><a href="default.asp">
+					<img src="image/icon/ICON2.png" width="230px" height="80px" onMouseOver="this.width=this.width*1.1;this.height=this.height*1.0" onMouseOut="this.width=this.width/1.1;this.height=this.height/1.0" >  <br>
+				</a></div>	  
+				<tr><a href="default.asp">
+				  <img src="image/icon/ICON3.png" width="230px" height="80px" onMouseOver="this.width=this.width*1.1;this.height=this.height*1.0" onMouseOut="this.width=this.width/1.1;this.height=this.height/1.0" >  <br>
+				</a></tr>
+				<tr><a href="default.asp">
+				  <img src="image/icon/ICON4.png" width="230px" height="80px" onMouseOver="this.width=this.width*1.1;this.height=this.height*1.0" onMouseOut="this.width=this.width/1.1;this.height=this.height/1.0" >  <br>
+				</a></tr>
+
+			</table>
+		</ul> 
+    </div>
+
+    <div class="col-sm-5">
+	    <!---
+	    <video id="movie" preload controls loop poster="poster.png" width="538" height="635" autoplay="autoplay">
+		  <source src="https://r5---sn-45gx5nuvox-u2xr.googlevideo.com/videoplayback?requiressl=yes&id=8beacf6e55b2a35f&itag=18&source=webdrive&app=explorer&ip=39.12.161.100&ipbits=8&expire=1462583519&sparams=requiressl,id,itag,source,ip,ipbits,expire&signature=46360BF3D3C6396D8E0446EFDA37DAB4C9B336D4.245C26D567490A0D1DC0E2C5F625221110B9E699&key=ck2&mm=31&mn=sn-45gx5nuvox-u2xr&ms=au&mt=1462568830&mv=m&pcm2cms=yes&pl=16&cpn=392E5sYmaqy73ryU&c=WEB&cver=1.10160504" type="video/mp4" />
+		  您的瀏覽器不支援HTML 5影片播放標籤<video>格式。
+		  Your browser doesn't support the <video> tag.
+		</video> -->
+		<div class="slider_container">
+		    <div><img src="image/homepage/pic1.jpg" alt="pure css3 slider"></div>
+		    <div><img src="image/homepage/pic2.jpg" alt="pure css3 slider"></div>
+		    <div><img src="image/homepage/pic3.jpg" alt="pure css3 slider"></div>
+		    <div><img src="image/homepage/pic4.jpg" alt="pure css3 slider"></div>	       
+		    <div><img src="image/homepage/pic3.jpg" alt="pure css3 slider"></div>
+		</div>
+		
+   	</div>
+   
+</div>
+
+
+
+<audio autoplay>
+  <source src="music/Canon.mp3" type="audio/mp3" loop = "true">
+</audio>
+
+
+
+<!--
+<div id="footer">
+Copyright © W3Schools.com
+</div>
+-->
+</body>
+</html>
