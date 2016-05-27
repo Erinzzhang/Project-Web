@@ -31,28 +31,48 @@
 		/* 嵌入字型設定 */
 		@font-face {
 		    font-family: "竹風體";
-		    src: url(https://www.dropbox.com/s/szsbgh441bk9a28/DFChuStd-W4-BIG.ttf) format("truetype");
+		    src: url('DFChuStd-W4-BIG.ttf');
 		}
 		/* 引用嵌入字型 */
-		p.embFont01 {
+		.embFont01 {
 		    font-family: "竹風體";
-		    font-size: 44px;
+		    font-size: 36px;
+		    color:black;
+		}
+		.embFont02 {
+		    font-family: "竹風體";
+		    font-size: 24px;
+		    color:black;
 		}
 
-		/*p { font-family: "竹風體", serif; font-size: 40px;}*/
+		div { font-family: "竹風體", serif; font-size: 30px;}
 	</style>
 </head>
 <body>
 
-<div class="container">   
-		<img src="image/introduce.png" > 
+  
+<div><img src="image/upper3.png"  ></div> <br>
+<div class="container"> 
+	<!--<div><img src="image/upper3.png"  ></div> <br>-->
+		<div class="row">
+		<div class="col-sm-1"></div>
+    	<div class="col-sm-10">  
+				
+				<h2 class="embFont01"><b>關於多肉植物</b></h2>
+				<p class="embFont02">
+				多肉植物又被稱作肉質植物，是指植物能在氣候或土壤乾旱的條件下擁有肥大的葉或莖甚至是貯藏器官（例如是根莖），多肉植物主要生長於沙漠及海岸乾旱地區。它們的根、莖特別肥大，葉片退化，以利於儲存大量的水分。多肉植物主要分布在景天科、龍舌蘭科、大戟科、夾竹桃科、百合科、番杏科等。仙人掌亦可算是一種多肉植物，但由於其種類眾多，約3000至5000種，加上不是所有仙人掌都是多肉植物，因此大部分的人多半將之獨立，例如 <span style="color:green">「仙人掌與多肉植物」或「Cactus and Succulent」</span>。相較於仙人掌科，其他的多肉植物並無「刺座」的組織，部分有硬刺的品種，如大戟科，多半是表皮特化的情形。
+				</p>
+
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
 </div>
+<div ><img src="image/introduce/album.png" ></div>
 
 
 
-<p class="embFont01">
-	竹豐
-</p>
+
+
 <div id="footer">
 From Wikipedia
 </div>
